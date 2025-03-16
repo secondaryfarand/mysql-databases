@@ -20,6 +20,10 @@ app.get('/', (req, res) => {
         return;
       }
       console.log(result)
+      console.log(process.env.DATABASE_USER)
+      console.log(process.env.DATABASE_PASSWORD)
+      console.log(process.env.DATABASE_NAME)
+      console.log(process.env.DATABASE_HOST)
       response(200, result, "Get All Data", res)
   })  
 })
