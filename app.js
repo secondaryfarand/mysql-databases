@@ -31,7 +31,7 @@ app.get('/find', (req, res) => {
       // hasil dari  my sql
       if (err) {
           console.error(err);
-          res.status(500).send('Terjadi kesalahan saat mengambil data');
+          res.status(500).send('Terjadi kesalahan saat mengambil data')
           return;
         }
         console.log(result)
