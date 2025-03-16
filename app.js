@@ -27,7 +27,7 @@ app.get('/find', (req, res) => {
     const selectData = `SELECT nama_lengkap FROM mahasiswa WHERE nim  = ${req.query.nim}` 
 
     console.log('Find NIM : ', req.query.nim)
-    db.query(selectData, (err, result) => {
+    db.query(selectData, (err, result) => { 
       // hasil dari  my sql
       if (err) {
           console.error(err);
