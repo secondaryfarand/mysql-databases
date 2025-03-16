@@ -6,7 +6,8 @@ import {db} from "./connection.js"
 // import db from "./connection.js"
 import {response} from "./response.js"
 
-
+import dotenv from 'dotenv';
+dotenv.config();
 
 
 app.get('/', (req, res) => {
